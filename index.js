@@ -8,6 +8,10 @@ window.onload = () => {
     let secondsElement = document.getElementById('seconds')
     let tensElement = document.getElementById('tens')
 
+    // Initial Set
+    secondsElement.innerHTML = '00';
+    tensElement.innerHTML = '00';
+
     // Buttons
     let startButton = document.getElementById('start-button')
     let stopButton = document.getElementById('stop-button')
@@ -18,7 +22,19 @@ window.onload = () => {
     // Functionality
     startButton.onclick = () => {
         clearInterval(Interval)
-        Interval = setInterval(startTimer, 50)
+        Interval = setInterval(startTimer, 50);
+    }
+
+    stopButton.onclick = () => {
+        clearInterval(Interval);
+    }
+
+    resetButton.onclick = () => {
+        clearInterval(Interval);
+        tens = 0;
+        seconds = 0;
+        tensElement.innerHTML = '00'
+        secondsElement.innerHTML = '00'
     }
 
     startTimer = () => {
