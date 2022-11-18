@@ -43,26 +43,19 @@ window.onload = () => {
         if (tens < 9) {
             tensElement.innerHTML = '0' + tens;
         }
-
         if (tens > 9) {
             tensElement.innerHTML = tens;
         }
 
         if (tens > 99) {
-
-            console.log(seconds);
-
             seconds++;
             tens = 0;
-
-            // Reset tens
             tensElement.innerHTML = tens;
 
-            // Add seconds
+            // Seconds
             if (seconds < 9) {
                 secondsElement.innerHTML = '0' + seconds;
             }
-
             if (seconds > 9) {
                 secondsElement.innerHTML = seconds;
             }

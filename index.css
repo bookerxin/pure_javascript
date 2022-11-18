@@ -1,10 +1,16 @@
 
+body {
+    background-color: ghostwhite;
+}
+
 #main-div {
+    position: relative;
+    top: 10%;
     margin: auto;
     width: 50%;
-    background-color: gainsboro;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     border-radius: 10px;
+    background-color: rgba(220, 220, 220, 0.3)
 }
 
